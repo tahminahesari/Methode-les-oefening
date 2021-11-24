@@ -22,6 +22,9 @@ public class MediorOne {
         int doubledResult = doubleNumber(result);
 
         System.out.println(result + " verdubbeld is: " + doubledResult);
+        // begrijp ik goed als ik zeg dat bij deze methoden kan je resultaat van vorige variabele waarden mee berekennen?
+        int squaredNumber  = squareNumber (doubledResult);
+        System.out.println(doubledResult + " in het kwadraat is: " + squaredNumber );
     }
 
     public static int calculateSum(int firstNumber, int secondNumber) {
@@ -29,8 +32,11 @@ public class MediorOne {
     }
 
     public static int doubleNumber(int number) {
+
         return number * 2;
     }
-
+    public static int squareNumber(int number){
+        return number * number;
+    }
 
 }
